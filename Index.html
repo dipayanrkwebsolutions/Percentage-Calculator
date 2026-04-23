@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Percentage Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <div class="header">
+      <div class="icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#4a9eda" stroke-width="2.2">
+          <line x1="19" y1="5" x2="5" y2="19"/>
+          <circle cx="6.5" cy="6.5" r="2.5"/>
+          <circle cx="17.5" cy="17.5" r="2.5"/>
+        </svg>
+      </div>
+      <h1>Percentage Calculator</h1>
+    </div>
+    <p class="subtitle">Percentage Calculator is a free online tool to calculate percentages.</p>
+
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="row">
+        <label>What is</label>
+        <input type="number" id="c1a" placeholder="0" />
+        <label>% of</label>
+        <input type="number" id="c1b" placeholder="0" />
+        <label>?</label>
+        <div class="actions">
+          <button class="calc-btn" onclick="calc1()">CALCULATE</button>
+          <div class="result-box" id="r1"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <div class="row">
+        <input type="number" id="c2a" placeholder="0" />
+        <label>is what percent of</label>
+        <input type="number" id="c2b" placeholder="0" />
+        <label>?</label>
+        <div class="actions">
+          <button class="calc-btn" onclick="calc2()">CALCULATE</button>
+          <div class="result-box" id="r2"></div>
+          <span class="unit">%</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <div class="row row-wrap">
+        <label class="full-label">What is the percentage increase/decrease</label>
+      </div>
+      <div class="row">
+        <label>from</label>
+        <input type="number" id="c3a" placeholder="0" />
+        <label>to</label>
+        <input type="number" id="c3b" placeholder="0" />
+        <label>?</label>
+        <div class="actions">
+          <button class="calc-btn" onclick="calc3()">CALCULATE</button>
+          <div class="result-box" id="r3"></div>
+          <span class="unit">%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
